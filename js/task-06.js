@@ -1,5 +1,5 @@
-const inputEl = document.querySelector('#validation-input')
-inputEl.addEventListener()
+const inputWindowEl = document.querySelector('#validation-input')
+inputWindowEl.addEventListener()
 
 function borderColor() {
     const inputValidEl = Number(inputEl.dataset.length);
