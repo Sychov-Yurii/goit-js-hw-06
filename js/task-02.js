@@ -1,7 +1,7 @@
 const ingredients = [
-  'Potatoes', // 0
-  'Mushrooms', // 1
-  'Garlic', // 2
+  'Potatoes', 
+  'Mushrooms', 
+  'Garlic', 
   'Tomatos', 
   'Herbs',
   'Condiments',
