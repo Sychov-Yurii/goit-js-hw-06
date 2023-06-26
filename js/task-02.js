@@ -19,5 +19,5 @@ ingredients.forEach((ingredient, index, array) => {
   // listItem.classList.add('item');
   
 });
-
+мирп
 //list.appendChild(listItem);
