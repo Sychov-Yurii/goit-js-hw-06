@@ -1,7 +1,8 @@
 const inputEl = document.querySelector("#validation-input");
 inputEl.addEventListener("blur", borderColor);
-inputEl.classList.remove("invalid", 'valid')
+
 function borderColor() {
+    inputEl.classList.remove("invalid", 'valid');
     const inputValidEl = Number(inputEl.dataset.length);
     const inputInvalidEl = inputEl.value.length;
 

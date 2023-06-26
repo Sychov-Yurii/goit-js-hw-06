@@ -7,17 +7,13 @@ const ingredients = [
   'Condiments',
 ];
 
-const list = document.querySelector('ul#ingredients');
-const arr = [];
+let ul = document.getElementById('ingredients');
 
 
-ingredients.forEach((ingredient, index, array) => {
-  arr.push(ingredient)
-  console.log(arr);
-  // const listItem = document.createElement('li');
-  // listItem.textContent = ingredient;
-  // listItem.classList.add('item');
+for (var i = 0; i < ingredients.length; i++) {
   
-});
-мирп
-//list.appendChild(listItem);
+  let li = document.createElement('li');
+  li.textContent = ingredients[i];
+  li.classList.add('item');
+  ul.appendChild(li);
+}
