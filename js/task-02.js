@@ -7,13 +7,22 @@ const ingredients = [
   'Condiments',
 ];
 
-let ul = document.getElementById('ingredients');
+const markup = ingredients.map((elem) => {
 
-
-for (var i = 0; i < ingredients.length; i++) {
   
-  let li = document.createElement('li');
-  li.textContent = ingredients[i];
-  li.classList.add('item');
-  ul.appendChild(li);
-}
+
+  
+});
+
+  const li = document.querySelector('#ingredients');
+  const liEl = document.createElement("li");
+  liEl.classList.add("item")
+  const titleEl = document.createElement("h1").textContent;
+  titleEl.push(elem);
+  
+  console.dir();
+  console.log();
+
+
+
+

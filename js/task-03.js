@@ -13,12 +13,12 @@ const images = [
   },
 ];
 
-const galleryEl = document.querySelector('.gallery');
-let galleryItemEl = "";
-images.forEach((img) => {
-  galleryItemEl += `<Li><img class='gallery' src='${img.url}' alt='${img.alt}' width=100% height=100%></img></li>`;
-});
+// const galleryEl = document.querySelector('.gallery');
+// let galleryItemEl = "";
+// images.forEach((img) => {
+//   galleryItemEl += `<Li><img class='gallery' src='${img.url}' alt='${img.alt}' width=100% height=100%></img></li>`;
+// });
 
-galleryEl.insertAdjacentHTML("afterbegin", galleryItemEl)
+// galleryEl.insertAdjacentHTML("afterbegin", galleryItemEl)
 
 
