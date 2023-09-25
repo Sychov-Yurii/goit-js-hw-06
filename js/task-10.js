@@ -20,7 +20,26 @@ function getRandomHexColor() {
     for (let i = 0; i < amount; i += 1) {
         newArray[i] = i;
     }
-  }
+  
+
+  const addElements = newArray
+  .map(elem => {
+    if (elem === 0) {
+      return `<div style="width:${primaryValueSize}px; height:${primaryValueSize}px; background-color: ${getRandomHexColor()}"></div>`;
+    } else {
+      return `<div style="width:${primaryValueSize + elem * 10}px; height:${primaryValueSize + elem * 10}px; background-color: ${getRandomHexColor()}"></div>`;
+    }
+  }).join('');
+  boxEl.insertAdjacentHTML('beforeend', addElements);
+}
+
+function onBtnDestroyClick() {
+  destroyBoxes();
+}
+ function destroyBoxes() {
+  boxEl.innerHTML = '';
+ }
+
 
 
 
