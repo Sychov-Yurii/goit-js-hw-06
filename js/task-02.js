@@ -7,16 +7,17 @@ const ingredients = [
   'Condiments',
 ];
 
+const ul = document.getElementById('ingredients');
 
-
-
-const ul = document.getElementById('ingredients')
-ingredients.forEach(ingredient => {
+const newIngredient = ingredients.map(ingredient => {
   const li = document.createElement('li');
-  li.textContent = ingredient;
   li.classList.add('item');
-  ul.appendChild(li)
+  li.textContent = ingredient;
+  return li;
 })
+ul.append(...newIngredient)
+
+console.log(ul);
 
 
 
